@@ -1,0 +1,27 @@
+FORM 4.0 (Oct 11 2013) 64-bits                   Run: Sun Oct 13 19:31:54 2013
+    Tensors S,T;
+    Indices i,j,k,l;
+    Local F = S(i,k)*T(k,j) + S(i,l)*T(l,j);
+    Print;
+    .sort
+
+Time =       0.00 sec    Generated terms =          2
+               F         Terms in output =          2
+                         Bytes used      =        104
+
+   F =
+      S(i,k)*T(k,j) + S(i,l)*T(l,j);
+
+    
+    Sum k,l;
+    Print;
+    .end
+
+Time =       0.00 sec    Generated terms =          2
+               F         Terms in output =          1
+                         Bytes used      =         60
+
+   F =
+      2*S(i,N1_?)*T(N1_?,j);
+
+  0.00 sec out of 0.00 sec
